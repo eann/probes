@@ -1,0 +1,7 @@
+channel_groups = {
+    i: {
+        'channels': [j+16*i for j in range(16)],
+        'geometry': {(j+16*i): (i*200, j*50) for j in range(16)},
+        'graph': [((j+16*i), (j+16*i)+1) for j in range(15)] + [((j+16*i), (j+16*i)-1) for j in range(15, 0, -1)]
+    }
+for i in range(4)}
